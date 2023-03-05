@@ -28,7 +28,7 @@ const router = createBrowserRouter(
 )
 
 const Loading = () => (
-  <div className="flex w-full h-screen justify-center items-center bg-grey-5 text-grey-90">
+  <div className="justify flex h-screen w-full items-center bg-grey-5 text-grey-90">
     <Spinner variant="secondary" />
   </div>
 )
