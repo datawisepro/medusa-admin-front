@@ -7,14 +7,14 @@ import { SteppedProvider } from "../components/molecules/modal/stepped-modal"
 
 import { FeatureFlagProvider } from "../context/feature-flag"
 
-import { medusaUrl } from "../services/config"
+import { baseApiUrl } from "../services/config"
 import queryClient from "../services/queryClient"
 
 const Providers = ({ children }: PropsWithChildren) => {
   return (
     <BrowserRouter>
       <MedusaProvider
-        baseUrl={medusaUrl}
+        baseUrl={baseApiUrl}
         queryClientProviderProps={{
           client: queryClient,
         }}

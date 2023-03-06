@@ -1,3 +1,3 @@
-const medusaUrl = __MEDUSA_BACKEND_URL__ || "http://localhost:9000"
+const baseApiUrl = __MEDUSA_BACKEND_URL__
 
-export { medusaUrl }
+export { baseApiUrl }

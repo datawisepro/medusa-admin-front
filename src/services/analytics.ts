@@ -4,12 +4,12 @@ import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query"
 import axios from "axios"
 import { WRITE_KEY } from "../components/constants/analytics"
 import { useFeatureFlag } from "../context/feature-flag"
-import { medusaUrl } from "./config"
+import { baseApiUrl } from "./config"
 
 // API
 
 const client = axios.create({
-  baseURL: `${medusaUrl}/admin/analytics-configs`,
+  baseURL: `${baseApiUrl}/admin/analytics-configs`,
   withCredentials: true,
 })
 
