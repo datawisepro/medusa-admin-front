@@ -9,7 +9,6 @@ import { SteppedProvider } from "./components/molecules/modal/stepped-modal"
 import { FeatureFlagProvider } from "./context/feature-flag"
 import { baseApiUrl } from "./services/config"
 import queryClient from "./services/queryClient"
-import { ReactQueryDevtools } from "@tanstack/react-query-devtools"
 
 const Page = ({ children }: PropsWithChildren) => {
   return (
@@ -22,7 +21,6 @@ const Page = ({ children }: PropsWithChildren) => {
       <FeatureFlagProvider>
         <SteppedProvider>
           <LayeredModalProvider>{children}</LayeredModalProvider>
-          <ReactQueryDevtools />
         </SteppedProvider>
       </FeatureFlagProvider>
     </MedusaProvider>
