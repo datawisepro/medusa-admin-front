@@ -12,7 +12,6 @@ import queryClient from "./services/queryClient"
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools"
 
 const Page = ({ children }: PropsWithChildren) => {
-  console.log(baseApiUrl)
   return (
     <MedusaProvider
       baseUrl={baseApiUrl}
