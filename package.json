@@ -114,7 +114,7 @@
         "build": "vite build",
         "preview": "vite preview --port 7000",
         "format": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\"",
-        "start": "npm run dev",
+        "start": "next start",
         "serve": "npm run preview",
         "test": "vitest",
         "storybook": "start-storybook -p 6006",
