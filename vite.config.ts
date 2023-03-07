@@ -21,6 +21,7 @@ export default defineConfig({
   publicDir: "static",
   build: {
     outDir: "public",
+    chunkSizeWarningLimit: 1000 * 1000,
   },
   resolve: {
     alias: {
