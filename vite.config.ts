@@ -33,7 +33,7 @@ export default defineConfig({
     },
   },
   define: {
-    __MEDUSA_BACKEND_URL__: JSON.stringify(env.MEDUSA_BACKEND_URL),
+    __MEDUSA_BACKEND_URL__: JSON.stringify(env.NEXT_PUBLIC_MEDUSA_BACKEND_URL),
   },
   optimizeDeps: {
     exclude: ["typeorm", "medusa-interfaces"],

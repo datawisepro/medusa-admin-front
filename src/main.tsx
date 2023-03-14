@@ -1,5 +1,5 @@
 import { MedusaProvider } from "medusa-react"
-import type { PropsWithChildren } from "react"
+import { PropsWithChildren } from "react"
 import React from "react"
 import { createRoot } from "react-dom/client"
 import App from "./App"
@@ -11,6 +11,8 @@ import { baseApiUrl } from "./services/config"
 import queryClient from "./services/queryClient"
 
 const Page = ({ children }: PropsWithChildren) => {
+  console.log("base-url:", baseApiUrl)
+
   return (
     <MedusaProvider
       baseUrl={baseApiUrl}
