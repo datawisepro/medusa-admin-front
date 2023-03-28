@@ -11,8 +11,6 @@ import { baseApiUrl } from "./services/config"
 import queryClient from "./services/queryClient"
 
 const Page = ({ children }: PropsWithChildren) => {
-  console.log("base-url:", baseApiUrl)
-
   return (
     <MedusaProvider
       baseUrl={baseApiUrl}
